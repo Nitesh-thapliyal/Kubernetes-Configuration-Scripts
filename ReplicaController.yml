@@ -3,6 +3,7 @@ kind: ReplicationController
 metadata:
   name: "nitesh"
 spec:
+  replicas: 4
   selector:
     app: web
   template:
