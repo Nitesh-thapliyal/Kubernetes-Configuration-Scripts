@@ -26,6 +26,8 @@
 
 - Now get the port number using command `kubectl get svc`
 
+![Kubectlgetsvc](https://github.com/Nitesh-thapliyal/Kubernetes-files/blob/master/src/kubectlsvc.png)
+
 - now copy the ip:port in bowser you will find wrodress page 
 
 ## Secret.yml 
