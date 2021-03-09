@@ -12,7 +12,7 @@
 
 - This file helps to create load balancer to manage the traffic in the container
 
-## Webapp
+## Multi tier application
 
 - To launch mysql pod use file **launchMysqlDatabase.yml** or use command `kubectl run pod-name --image=mysql:5.7 --env=MYSQL_ROOT_PASSWORD=pass --env=MYSQL_DATABASE=wpdb --env=MySQL_USER=user-name --env=MYSQL_PASSWORD=pass `
 
@@ -24,11 +24,27 @@
 
 - Now got to miniKube and check the Ipaddress using command ` ifconfig eth1`
 
+![minikube](https://github.com/Nitesh-thapliyal/Kubernetes-files/blob/master/src/minikube.png)
+
 - Now get the port number using command `kubectl get svc`
 
 ![Kubectlgetsvc](https://github.com/Nitesh-thapliyal/Kubernetes-files/blob/master/src/kubectlsvc.png)
 
-- now copy the ip:port in bowser you will find wrodress page 
+- now copy the ip:port in bowser you will find wrodress page add the details
+
+![worpress](https://github.com/Nitesh-thapliyal/Kubernetes-files/blob/master/src/Wordpresssignin.png)
+
+- Now login to the Wordpress
+
+![wordpresslogin](https://github.com/Nitesh-thapliyal/Kubernetes-files/blob/master/src/wordpresslogin.png)
+
+- Now you can create blog in Wordpress
+
+![blog](https://github.com/Nitesh-thapliyal/Kubernetes-files/blob/master/src/blog.png)
+
+- Now you can check the mysql database extra tables will be created
+
+![database](https://github.com/Nitesh-thapliyal/Kubernetes-files/blob/master/src/sql.png)
 
 ## Secret.yml 
 
